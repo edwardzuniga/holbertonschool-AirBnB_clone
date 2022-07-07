@@ -86,8 +86,7 @@ class HBNBCommand(cmd.Cmd):
         Help for create
         '''
         print('Create command to create new instance\n')
-    
-    
+
     def do_show(self, args):
         '''
         Print str repr of an instance
