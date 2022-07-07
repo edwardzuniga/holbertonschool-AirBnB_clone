@@ -230,8 +230,7 @@ class HBNBCommand(cmd.Cmd):
         print("updates and objects with new information")
         print("update <class> <id> <attribute> <value>")
 
-    
 
 
 if __name__ == '__main__':
-    HBNBCommand().cmdloop()
+        HBNBCommand().cmdloop()
