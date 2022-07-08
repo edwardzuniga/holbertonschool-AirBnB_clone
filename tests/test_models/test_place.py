@@ -12,11 +12,11 @@ class TestPlace(TestBaseModel):
     =========================
     '''
 
-    def __init__(self, *args, **kwargs):
+    def _init_(self, *args, **kwargs):
         '''
         Constructor
         '''
-        super().__init__(*args, **kwargs)
+        super()._init_(*args, **kwargs)
         self.test_class = Place
         self.test_name = "Place"
 
@@ -33,8 +33,8 @@ class TestPlace(TestBaseModel):
         '''
         place = self.test_class()
         self.assertIsInstance(place.user_id, str)
-        
-    def test_name(self):
+
+    def test_city_name(self):
         '''
         Attribute test
         '''
@@ -47,52 +47,52 @@ class TestPlace(TestBaseModel):
         '''
         place = self.test_class()
         self.assertIsInstance(place.description, str)
-    
-    def test_number_rooms(self):
+
+    def test_num_rooms(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.number_rooms, str)
+        self.assertIsInstance(place.number_rooms, int)
     
-    def test_number_bathrooms(self):
+    def test_num_bathrooms(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.number_bathrooms, str)
-    
+        self.assertIsInstance(place.number_bathrooms, int)
+
     def test_max_guest(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.max_guest, str)
-    
+        self.assertIsInstance(place.max_guest, int)
+
     def test_price_by_night(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.price_by_night, str)
-    
+        self.assertIsInstance(place.price_by_night, int)
+
     def test_latitude(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.latitude, str)
+        self.assertIsInstance(place.latitude, float)
     
     def test_longitude(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.longitude, str)
-    
+        self.assertIsInstance(place.longitude, float)
+
     def test_amenity_ids(self):
         '''
         Attribute test
         '''
         place = self.test_class()
-        self.assertIsInstance(place.amenity_ids, str)
+        self.assertIsInstance(place.amenity_ids, list)
