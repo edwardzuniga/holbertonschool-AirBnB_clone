@@ -35,7 +35,7 @@ The following is a tree diagram of this projects folders and files:
 
 ┣ :file_folder:engine
 
- ┃ ┗ file_storage.py
+ ┃  ┗ file_storage.py
 
  ┣ amenity.py
 
@@ -57,9 +57,9 @@ The Unit Tests are:
 
 ┣ :file_folder:test_models
 
-┃ ┣ test_engine
+┃ ┣ :file_folder:test_engine
 
-┃ ┃ ┗test_file_storage.py
+┃ ┃  ┗test_file_storage.py
 
 ┃ ┣ test_amenity.py
 
