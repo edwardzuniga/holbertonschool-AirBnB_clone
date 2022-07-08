@@ -33,14 +33,14 @@ The following is a tree diagram of this projects folders and files:
 
 **:file_folder:models**
 ┣ :file_folder:engine
-┃ ┗ file_storage.py
-┣ amenity.py
-┣ base_model.py
-┣ city.py
-┣ place.py
-┣ review.py
-┣ state.py
-┗ user.py
+ ┃ ┗ file_storage.py
+ ┣ amenity.py
+ ┣ base_model.py
+ ┣ city.py
+ ┣ place.py
+ ┣ review.py
+ ┣ state.py
+ ┗ user.py
 
 The Unit Tests are:
 
