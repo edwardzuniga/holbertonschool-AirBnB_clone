@@ -31,7 +31,7 @@ class TestBaseModel(unittest.TestCase):
         Destroy Json File
         '''
         try:
-            os.remove('JSONstorage.json')
+            os.remove('file.json')
         except Exception:
             pass
 
@@ -74,7 +74,7 @@ class TestBaseModel(unittest.TestCase):
         '''
         save Test
         '''
-        self.assertFalse(os.path.exists('JSONstorage.json'))
+        self.assertFalse(os.path.exists('file.json'))
 
     def test_str(self):
         '''
