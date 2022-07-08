@@ -9,7 +9,7 @@ from datetime import datetime
 
 class FileStorage:
     '''
-    FileStorage class
+    FileStorage Class
     '''
 
     __file_path = "file.json"
