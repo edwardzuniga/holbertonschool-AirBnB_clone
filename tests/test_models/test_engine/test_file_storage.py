@@ -29,7 +29,7 @@ class TestFileStorage(unittest.TestCase):
         File creation test
         '''
         storage.save()
-        self.assertTrue(os.path.exists('JSONstorage.json'))
+        self.assertTrue(os.path.exists('file.json'))
 
     def test_objects(self):
         '''
@@ -43,7 +43,7 @@ class TestFileStorage(unittest.TestCase):
         Destroy JSON file
         '''
         try:
-            os.remove('JSONstorage.json')
+            os.remove('file.json')
         except:
             pass
 
@@ -55,4 +55,4 @@ class TestFileStorage(unittest.TestCase):
         my_dict = base.to_dict()
         base.save()
         base2 = BaseModel(**my_dict)
-        self.assertFalse(os.stat('JSONstorage.json').st_size == 0)
+        self.assertFalse(os.stat('file.json').st_size == 0)
