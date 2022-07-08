@@ -54,15 +54,25 @@ The following is a tree diagram of this projects folders and files:
 The Unit Tests are:
 
 **:file_folder:tests**
+
 ┣ :file_folder:test_models
+
 ┃ ┣ test_engine
+
 ┃ ┃ ┗test_file_storage.py
+
 ┃ ┣ test_amenity.py
+
 ┃ ┣ test_base_model.py
+
 ┃ ┣ test_city.py
+
 ┃ ┣ test_place.py
+
 ┃ ┣ test_review.py
+
 ┃ ┣ test_state.py
+
 ┃ ┗ test_user.py
 
 ## Use
